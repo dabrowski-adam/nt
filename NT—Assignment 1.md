@@ -4,23 +4,117 @@
 
 ##### IPv4 Protocol
 
+The fourth version of the Internet Protocol intendet for the Internet usage. The identification of hosts in IPv4 is based on IP addresses. Data is being transmitted as the standard datagrams. Using IPv4 is possible irrespective of the technology linking plug-in devices - telephone network, cable, radio telephone network etc. IPv4 is nowadays in a common use. There is also accessible the latest version - IPv6. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
+
 ##### ISO/OSI Model
+
+OSI (Open Systems Interconnection) is reference model for how applications can communicate over a network. A reference model is a conceptual framework for understanding relationships. The purpose of the OSI reference model is invented mainly to guide vendors and developers so the digital communication products and software programs they create could interoperate. The fundamental assumption of the model is division of network systems into 7 layers cooperating with oneself in the closely determined way. For the Internet there was formulated simplified TCP/IP model which has only 4 layers.
+
+![Znalezione obrazy dla zapytania ISO/OSI Model](http://nhprice.com/wp-content/uploads/2013/03/1-Tutorial-OSI-7-layer-model.jpg)
+
+​                                                  													     *http://nhprice.com/*
 
 ##### IP packet parameters
 
+
+
+
+
+
+
+
+
 ##### ICMP protocol
+
+A protocol described in RFC 792 of the network layer of the OSI model, used in the diagnostics of the network and routeing. It is mainly used in the inspection of transmission in nthe network. It is used in ping programs and in traceroute. It is used by network devices, including routers, to send error messages and operational information indicating, for example, that a requested service is not available or that a host or router could not be reached.
 
 ##### Parameters of an IP address
 
+- Address ID
+- Address State
+- Broadcast Address Format
+- CGA Modifier
+- Customer ID
+- Customer Name
+- EUI-64
+- Gateway IP Address
+- Hold Up Time
+- IGP Inhibit
+- Interface ID
+- Interface Name
+- IP Address
+- IP Address Preferred
+- IPv4 Primary
+- Operational Address
+- Populate Host Routes
+- Prefix Length
+- Remote IP Address
+- Routing Instance ID
+- Routing Instance Name
+- Service ID
+- Service Name
+- Site ID
+- Site Name
+- System IP
+- Track SRRP Instance
+
 ##### Network subnets
+
+Subnetworking is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called **subnetting**.Devices which are in one (shared) subnets are characterized by an identical initial fragment of the binary record of the IP address in which yhr length appoints value of the subnet mask. This results in the logical division of an IP address into two fields, a *network number* or *routing prefix* and the *rest field* or *host identifier*. The *rest field* is an identifier for a specific host or network interface.
 
 ##### Network classes
 
+Every IP address is 32-bits number, consisting of four octets (of 8-bit numbers). It is easier to understand TCP/IP addressing adopting the concept that every addressing is closely associated with functions and duties of the given computer. Every computer in the  TCP/IP network has a unique, 32-bit IP address identifying not only a computer, but also a network to which it belongs. IP address consists of three basic components:
+
+- bits determining the class of the address,
+- part identifying the local area network (LAN)
+- part identifying the specific computer online
+
+The class of address defines which bits are used for the network ID and which bits are used for the host ID. It also defines the possible number of networks and the number of hosts per network.
+
+- *Class A* addresses are assigned to networks with a very large number of hosts. 
+
+		The remaining 24 bits (the last three octets) represent the host ID. This allows for 126 networks and 16,777,214 hosts per network. 
+
+- *Class B* addresses are assigned to medium-sized to large-sized networks.
+
+		The two high-order bits in a class B address are always set to binary 1 0. The next 14 bits (completing the first two octets) complete the network ID. The remaining 16 bits (last two octets) represent the host ID. This allows for 16,384 networks and 65,534 hosts per network.
+
+- *Class C* addresses are used for small networks. 
+
+		The three high-order bits in a class C address are always set to binary 1 1 0. The next 21 bits (completing the first three octets) complete the network ID. The remaining 8 bits (last octet) represent the host ID. This allows for 2,097,152 networks and 254 hosts per network.
+
+- *Class D* addresses are reserved for IP multicast addresses.
+
+		The four high-order bits in a class D address are always set to binary 1 1 1 0. The remaining bits are for the address that interested hosts recognize. Microsoft supports class D addresses for applications to multicast data to multicast-capable hosts on an internetwork.
+
+- *Class E* is an experimental address that is reserved for future use. 
+
+		The E class is experimental and reserved for IETF.
+
+In local area networks addresses of the class A, B or C are being used.
+
 ##### Network mask
+
+An IP address has two components, the network address and the host address. A subnet mask separates the IP address into the network and host addresses. Subnetting further divides the host part of an IP address into a subnet and host address if additional subnetwork is needed. A Subnet mask is a 32-bit number that masks an IP address, and divides the IP address into network address and host address. Subnet Mask is made by setting network bits to all "1"s and setting host bits to all "0"s. Within a given network, two host addresses are reserved for special purpose, and cannot be assigned to hosts. The "0" address is assigned a network address and "255" is assigned to a broadcast address, and they cannot be assigned to hosts.
+
+The address mask has the same length as the IP address and consists of the bit sequence for values 1 after which a sequence of zeroes is taking place - for IPv4 the mask has 32 bits, for IPv6 has 128 bits. In case of IPv4 it is usually given in the form of four 8-bits numbers, which are usually  written decimally and separated with dots (for example 255,255,255,224). The value of the mask must be given to all routers and computers in a given subnet. As a result of comparing the address mask (e.g. 255.255.255. 0) with the specific IP address (e.g. 192.180. 5.22) the router is informed about, which part of the address is identifying the subnet (in this case 192,180. 5), and which a device assigned to this IP address (. 22).
 
 ##### Routing table
 
+A routing table is a set of rules, often viewed in table format, that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. All IP-enabled devices, including routers and switches, use routing tables.
+
+Routeing consists of searching in the board for appropriate information regarding the destination of the package, i.e. the route a given package is supposed to travel, in order to reach one's destination. Every entry of the route must contain two pieces of information:
+
+destination address - it is an address of the network, with which the router is interfacing; sometimes he can happen, that the device knows a few routes of the approach to the given network 
+
+indicator to the destination - information about whether the router is directly connected to to the destination network, or address of other router which knows, where to send the package (so-called next-hop router).
+
 ##### Default gateway
+
+Default gateway is the node in a computer network using the Internet Protocol Suite that serves as the forwarding host (router) to other networks when no other route specification matches the destination IP address of a packet.
+
+In the TCP/IP network the default gateway is the router to which computers are supposed to send to the local network area packages provided they should not be directed to the local network area or to other known routers. In the typical configuration of the TCP/IP local network all computers are using one default gate which provides them the connection with other subnets or with the Internet.
 
 ##### Lookup
 
