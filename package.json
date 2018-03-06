@@ -1,0 +1,24 @@
+{
+  "name": "network-technologies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabrowski-adam/nt.git"
+  },
+  "author": "Katarzyna Mickiewicz, Adam Dąbrowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dabrowski-adam/nt/issues"
+  },
+  "homepage": "https://github.com/dabrowski-adam/nt#readme",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "showdown": "^1.8.6"
+  }
+}
