@@ -114,3 +114,4 @@ typings/
 .next
 
 .idea/
+build/
