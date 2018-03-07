@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+	</head>
+	<body>
+		<div id="header">
+			<h1>Katarzyna Mickiewicz<br/>Adam Dąbrowski</h1>
+		</div>
+		{{#reports}}
+		<div class="report">
+			{{{.}}} <!-- triple mustache prevents escaping html (and dot means current element) -->
+		</div>
+		{{/reports}}
+	</body>
+</html>
