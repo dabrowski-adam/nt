@@ -2,6 +2,8 @@
 
 ## Theoretical Part
 
+
+
 ##### IPv4 Protocol
 
 The fourth version of the Internet Protocol intendet for the Internet usage. The identification of hosts in IPv4 is based on IP addresses. Data is being transmitted as the standard datagrams. Using IPv4 is possible irrespective of the technology linking plug-in devices - telephone network, cable, radio telephone network etc. IPv4 is nowadays in a common use. There is also accessible the latest version - IPv6. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
@@ -116,21 +118,63 @@ Default gateway is the node in a computer network using the Internet Protocol Su
 
 In the TCP/IP network the default gateway is the router to which computers are supposed to send to the local network area packages provided they should not be directed to the local network area or to other known routers. In the typical configuration of the TCP/IP local network all computers are using one default gate which provides them the connection with other subnets or with the Internet.
 
-##### Lookup
+##### Lookup 
+
+Every machine that is on a TCP/IP network ( a local network, or the Internet ) has a unique Internet Protocol ( IP ) address.
+
+IP-Lookup helps you to find information about your current IP address or any other IP address. It supports both IPv4 and IPv6 addresses.
 
 ##### Broadcast
 
+Broadcast is data transmission mode consisting in sending by one port (data channel) the packages which should be received by all remaining ports connected to the given network. In practice, the scope of the broadcast is limited to a broadcast domain. Broadcasting a message is in contrast to unicast addressing in which a host sends datagrams to another single host identified by a unique IP address. Broadcasting is largely confined to local area network (LAN) technologies, most notably Ethernet and token ring, where the performance impact of broadcasting is not as large as it would be in a wide area network. Both Ethernet and IPv4 use an all-ones broadcast address to indicate a broadcast packet.
+
 ##### Subnet address
+
+The parts of the IP address, for which in a mask there are bits equal to 1, belong to the subnet address, and all remaining bits refer to the address of the device in this subnet. After executing the bitwise product (AND function) of the mask and the IP address, an IP address  of the entire subnet, for which specified device with this IP address belongs is obtained.
 
 ##### Private network address
 
+Each IP node requires an IP address that is globally unique to the IP internetwork. In the case of the Internet, each IP node on a network connected to the Internet requires an IP address that is globally unique to the Internet. As the Internet grew, organizations connecting to the Internet required a public address for each node on their intranets.
+
+IP addresses are being assigned to suppliers of the Internet (Eng. Service Internet Provider - ISP), for governmental organisations, academic institutions, research organisations and other big legal bodies which are using devices directly connected to the worldwide network Internet. Network administrators subject to these individuals possess IP addresses themselves from the scope allotted to them. All remaining Internet users are using mediation of the Internet suppliers. 
+
 ##### Network address translation
+
+NAT (Network Address Translation) is a method of remapping one IP address space into another by modifying network address information in IP header of packets while they are in transit across a traffic routing device. The technique was originally used as a shortcut to avoid the need to readdress every host when a network was moved. It has become a popular and essential tool in conserving global address space in the face of IPv4 address exhaustion. One Internet-routable IP address of a NAT gateway can be used for an entire private network.
+
+IP masquerading is a technique that hides an entire IP address space, usually consisting of private IP addresses, behind a single IP address in another, usually public address space. The address that has to be hidden is changed into a single (public) IP address as "new" source address of the outgoing IP packet so it appears as originating not from the hidden host but from the routing device itself. Because of the popularity of this technique to conserve IPv4 address space, the term NAT has become virtually synonymous with IP masquerading.
 
 ##### RIPE
 
+RIPE Network Coordination Centre is an independent and unprofitable organization supporting the network infrastructure Internet. It's headquarter is located in Amsterdam. RIPE NCC acts,inter alia, the role of Regional Internet Register (Eng. RIR) by storing and allocating such data as IPv4 addresses and IPv6 and numbers AS.
+
 ##### ICANN
 
+ICANN a nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces of the Internet, ensuring the network's stable and secure operation. ICANN's primary principles of operation have been described as helping preserve the operational stability of the Internet; to promote competition; to achieve broad representation of the global Internet community; and to develop policies appropriate to its mission through bottom-up, consensus-based processes
+
 ##### Physical layer solutions
+
+In the seven-layer OSI model of computer networking, the physical layer or layer 1 is the first and lowest layer. This layer may be implemented by a PHY chip.
+
+The major functions and services performed by the physical layer are:
+
+- Bit-by-bit or symbol-by-symbol delivery
+- Providing a standardized interface to physical transmission media, including
+- Mechanical specification of electrical connectors and cables, for example maximum cable length
+- Electrical specification of transmission line signal level and impedance
+- Radio interface, including electromagnetic spectrum frequency allocation and specification of signal strength, analog bandwidth, etc.
+- Specifications for IR over optical fiber or a wireless IR communication link
+- Modulation
+- Line coding
+- Bit synchronization in synchronous serial communication
+- Start-stop signalling and flow control in asynchronous serial communication
+- Circuit switching
+- Multiplexing
+- Establishment and termination of circuit switched connections
+- Carrier sense and collision detection utilized by some level 2 multiple access protocols
+- Equalization filtering, training sequences, pulse shaping and other signal processing of physical signals
+- Forward error correction[5] for example bitwise convolutional coding
+- Bit-interleaving and other channel coding
 
 
 
