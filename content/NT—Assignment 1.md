@@ -74,23 +74,23 @@ The class of address defines which bits are used for the network ID and which bi
 
 - *Class A* addresses are assigned to networks with a very large number of hosts. 
 
-		The remaining 24 bits (the last three octets) represent the host ID. This allows for 126 networks and 16,777,214 hosts per network. 
+	The remaining 24 bits (the last three octets) represent the host ID. This allows for 126 networks and 16,777,214 hosts per network. 
 
 - *Class B* addresses are assigned to medium-sized to large-sized networks.
 
-		The two high-order bits in a class B address are always set to binary 1 0. The next 14 bits (completing the first two octets) complete the network ID. The remaining 16 bits (last two octets) represent the host ID. This allows for 16,384 networks and 65,534 hosts per network.
+   The two high-order bits in a class B address are always set to binary 1 0. The next 14 bits (completing the first two octets) complete the network ID. The remaining 16 bits (last two octets) represent the host ID. This allows for 16,384 networks and 65,534 hosts per network.
 
 - *Class C* addresses are used for small networks. 
 
-		The three high-order bits in a class C address are always set to binary 1 1 0. The next 21 bits (completing the first three octets) complete the network ID. The remaining 8 bits (last octet) represent the host ID. This allows for 2,097,152 networks and 254 hosts per network.
+	The three high-order bits in a class C address are always set to binary 1 1 0. The next 21 bits (completing the first three octets) complete the network ID. The remaining 8 bits (last octet) represent the host ID. This allows for 2,097,152 networks and 254 hosts per network.
 
 - *Class D* addresses are reserved for IP multicast addresses.
 
-		The four high-order bits in a class D address are always set to binary 1 1 1 0. The remaining bits are for the address that interested hosts recognize. Microsoft supports class D addresses for applications to multicast data to multicast-capable hosts on an internetwork.
+	The four high-order bits in a class D address are always set to binary 1 1 1 0. The remaining bits are for the address that interested hosts recognize. Microsoft supports class D addresses for applications to multicast data to multicast-capable hosts on an internetwork.
 
 - *Class E* is an experimental address that is reserved for future use. 
 
-		The E class is experimental and reserved for IETF.
+	The E class is experimental and reserved for IETF.
 
 In local area networks addresses of the class A, B or C are being used.
 

@@ -12,6 +12,7 @@ const outputDir	  = './build/';
 		const fileNames	   = await fs.readdir(contentDir);
 		const fileContents = await Promise.all(fileNames.map(f => fs.readFile(contentDir + f, 'utf8')));
 		const converter    = new md.Converter();
+		converter.setOption('noHeaderId', 'true');
 		const converted    = fileContents.map(x => converter.makeHtml(x));
 		
 		/*converted.forEach((x, i) => { 
