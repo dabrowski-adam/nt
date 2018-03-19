@@ -12,7 +12,7 @@ The fourth version of the Internet Protocol intendet for the Internet usage. The
 
 OSI (Open Systems Interconnection) is reference model for how applications can communicate over a network. A reference model is a conceptual framework for understanding relationships. The purpose of the OSI reference model is invented mainly to guide vendors and developers so the digital communication products and software programs they create could interoperate. The fundamental assumption of the model is division of network systems into 7 layers cooperating with oneself in the closely determined way. For the Internet there was formulated simplified TCP/IP model which has only 4 layers.
 
-![Znalezione obrazy dla zapytania ISO/OSI Model](http://nhprice.com/wp-content/uploads/2013/03/1-Tutorial-OSI-7-layer-model.jpg)
+![ISO/OSI Model](http://nhprice.com/wp-content/uploads/2013/03/1-Tutorial-OSI-7-layer-model.jpg)
 
 ​                                                  													     *http://nhprice.com/*
 
