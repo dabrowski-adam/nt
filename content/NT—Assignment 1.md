@@ -455,13 +455,12 @@ server at RS.INTERNIC.NET.
 
 ##### My Computer
 
-IP Address: 		192.168.1.4
+IP Address: 	192.168.1.4
 
 MAC Address:	9C:D2:1E:18:0D:5F
 
-Assigning a different IP
 
-Routing Table—route
+Show routing table at your PC using route
 
 ```bash
 🞂 cat /proc/net/route
@@ -474,7 +473,31 @@ default via 192.168.1.254 dev wlp1s0 proto dhcp metric 600
 192.168.1.0/24 dev wlp1s0 proto kernel scope link src 192.168.1.4 metric 600 
 ```
 
-ipconfig
+Assigning a different IP
+
+```bash
+🞂 sudo ifconfig wlp1s0 192.168.0.8 netmask 255.255.255.0
+Password: 
+
+🞂 ifconfig
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Bcast:0.0.0.0  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:329 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:329 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:25019  TX bytes:25019
+
+wlp1s0    Link encap:Ethernet  HWaddr 9C:D2:1E:18:0D:5F
+          inet addr:192.168.0.8  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:5387 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:4641 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:5675491  TX bytes:868699
+```
+
+Find your MAC address using ipconfig
 
 ```bash
 🞂 ifconfig
@@ -509,7 +532,7 @@ wlp1s0    Link encap:Ethernet  HWaddr 9C:D2:1E:18:0D:5F
        valid_lft forever preferred_lft forever
 ```
 
-arp (incl. router's)
+Find MAC address of your computer and router using arp
 
 ```bash
 🞂 cat /proc/net/arp 
