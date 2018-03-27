@@ -6,7 +6,7 @@
 
 ##### IPv4 Protocol
 
-The fourth, and the most widely used, version of the Internet Protocol (which provides a standard set of rules for communicating over the internet). The identification of hosts in IPv4 is based on 32-bit IP addresses, consisting of four octets, e.g. 111.222.333.444. Data is being transmitted as standard datagrams (or packets—consisting of a header and payload). Using IPv4 is possible irrespective of the technology linking plugged-in devices - telephone network, cable, radio telephone network etc. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). There is also available a newer version - IPv6, which uses 128-bit addresses.  In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
+The fourth, and the most widely used, version of the Internet Protocol (which provides a standard set of rules for communicating over the internet). The identification of hosts in IPv4 is based on 32-bit IP addresses, consisting of four octets, e.g. 111.222.333.444. Data is being transmitted as standard datagrams. Using IPv4 is possible irrespective of the technology linking plugged-in devices - telephone network, cable, radio telephone network etc. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). There is also available a newer version - IPv6, which uses 128-bit addresses.  In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
 
 ##### ISO/OSI Model
 
