@@ -585,6 +585,16 @@ wlp1s0    Link encap:Ethernet  HWaddr 9C:D2:1E:18:0D:5F
           RX bytes:5675491  TX bytes:868699
 ```
 
+Assign a different IP using GUI  (RedHat Linux)
+
+![https://www.linglom.com/images/Linux/ChangeIPAddress/2.png](https://www.linglom.com/images/Linux/ChangeIPAddress/2.png)
+
+![https://www.linglom.com/images/Linux/ChangeIPAddress/3.png](https://www.linglom.com/images/Linux/ChangeIPAddress/3.png)
+
+​                                                  										Source: *https://www.linglom.com*
+
+
+
 Finding MAC address of the computer using ipconfig
 
 ```bash
