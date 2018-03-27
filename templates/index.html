@@ -2,26 +2,49 @@
 <html>
 	<head>
 		<meta charset="UTF-8"> 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-		<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-		<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
 		<style>
 			html {
 				padding: 3.2em 1.6em;
+				background-color: #FE;
+				color: #AA;
+				font-size: 16px;
+				line-height: 1.75rem;
 			}
 			body {
 				max-width: 800px;
 				margin:	0 auto;
 			}
+			h1, h2 {
+				text-align: center;
+				line-height: 3.5rem;
+			}
+			h5 {
+				font-size: 1rem;
+			}
+			pre {
+				background: #f4f5f6;
+				border-left: 3px solid #9b4dca;
+			}
+			code {
+				overflow: auto;
+				display: block;
+				padding: 1rem 1rem;
+				font-size: 14px;
+				line-height: 18px;
+				color: #CC;
+			}
+			div.report {
+				border-top: solid 2px #DDD;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="header">
-			<h1>Katarzyna Mickiewicz<br/>Adam Dąbrowski 😎</h1>
+			<h1>Katarzyna Mickiewicz 👻<br/>Adam Dąbrowski 😎</h1>
 		</div>
 		{{#reports}}
 		<div class="report">
-			{{{.}}} <!-- triple mustache prevents escaping html (and dot means current element) -->
+			{{{.}}} {{! triple mustache prevents escaping html (and dot means current element) }}
 		</div>
 		{{/reports}}
 	</body>

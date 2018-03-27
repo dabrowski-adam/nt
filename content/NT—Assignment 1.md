@@ -6,11 +6,11 @@
 
 ##### IPv4 Protocol
 
-The fourth version of the Internet Protocol intendet for the Internet usage. The identification of hosts in IPv4 is based on IP addresses. Data is being transmitted as the standard datagrams. Using IPv4 is possible irrespective of the technology linking plug-in devices - telephone network, cable, radio telephone network etc. IPv4 is nowadays in a common use. There is also accessible the latest version - IPv6. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
+The fourth, and the most widely used, version of the Internet Protocol (which provides a standard set of rules for communicating over the internet). The identification of hosts in IPv4 is based on 32-bit IP addresses, consisting of four octets, e.g. 111.222.333.444. Data is being transmitted as standard datagrams (or packets—consisting of a header and payload). Using IPv4 is possible irrespective of the technology linking plugged-in devices - telephone network, cable, radio telephone network etc. IPv4 is described in IETF publication RFC 791 (September 1981), replacing an earlier definition (RFC 760, January 1980). There is also available a newer version - IPv6, which uses 128-bit addresses.  In the model TCP/IP the IPv4 protocol is in a layer of the Internet, for which the network layer corresponds in the OSI Model.
 
 ##### ISO/OSI Model
 
-OSI (Open Systems Interconnection) is reference model for how applications can communicate over a network. A reference model is a conceptual framework for understanding relationships. The purpose of the OSI reference model is invented mainly to guide vendors and developers so the digital communication products and software programs they create could interoperate. The fundamental assumption of the model is division of network systems into 7 layers cooperating with oneself in the closely determined way. For the Internet there was formulated simplified TCP/IP model which has only 4 layers.
+OSI (Open Systems Interconnection) is reference model for how applications can communicate over a network. A reference model is a conceptual framework for understanding relationships. The purpose of the OSI reference model is mainly to guide vendors and developers, so that the digital communication products and software programs they create can interoperate. The fundamental assumption of the model is division of network systems into 7 layers cooperating in a closely determined way. For the Internet there was formulated simplified TCP/IP model which has only 4 layers.
 
 ![ISO/OSI Model](http://nhprice.com/wp-content/uploads/2013/03/1-Tutorial-OSI-7-layer-model.jpg)
 
@@ -18,17 +18,11 @@ OSI (Open Systems Interconnection) is reference model for how applications can c
 
 ##### IP packet parameters
 
-
-
-
-
-
-
-
+IP packets consist of the header, which contains the information necessary to deliver it to the recipient, and the payload, which is the data being delivered.
 
 ##### ICMP protocol
 
-A protocol described in RFC 792 of the network layer of the OSI model, used in the diagnostics of the network and routeing. It is mainly used in the inspection of transmission in nthe network. It is used in ping programs and in traceroute. It is used by network devices, including routers, to send error messages and operational information indicating, for example, that a requested service is not available or that a host or router could not be reached.
+A protocol described in RFC 792 of the network layer of the OSI model, used in the diagnostics of the network and routing. It is mainly used in the inspection of transmission in the network. It is used by network devices, including routers, to send error messages and operational information indicating, for example, that a requested service is not available or that a host or router could not be reached. Also, ping and traceroute make use of this protocol.
 
 ##### Parameters of an IP address
 
@@ -62,11 +56,11 @@ A protocol described in RFC 792 of the network layer of the OSI model, used in t
 
 ##### Network subnets
 
-Subnetworking is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called **subnetting**.Devices which are in one (shared) subnets are characterized by an identical initial fragment of the binary record of the IP address in which yhr length appoints value of the subnet mask. This results in the logical division of an IP address into two fields, a *network number* or *routing prefix* and the *rest field* or *host identifier*. The *rest field* is an identifier for a specific host or network interface.
+Subnetworking is a logical subdivision of an IP network. The practice of dividing a network into two or more networks is called **subnetting**. Devices which are in one (shared) subnet are characterized by an identical initial fragment of the binary record of the IP address in which the length appoints value of the subnet mask. This results in the logical division of an IP address into two fields, a *network number* or *routing prefix* and the *rest field* or *host identifier*. The *rest field* is an identifier for a specific host or network interface.
 
 ##### Network classes
 
-Every IP address is 32-bits number, consisting of four octets (of 8-bit numbers). It is easier to understand TCP/IP addressing adopting the concept that every addressing is closely associated with functions and duties of the given computer. Every computer in the  TCP/IP network has a unique, 32-bit IP address identifying not only a computer, but also a network to which it belongs. IP address consists of three basic components:
+Every IP address is a 32-bit number, consisting of four octets (8-bit numbers). It is easier to understand TCP/IP addressing adopting the concept that every addressing is closely associated with functions and duties of the given computer. Every computer in the  TCP/IP network has a unique, 32-bit IP address identifying not only the computer, but also a network to which it belongs. IP address consists of three basic components:
 
 - bits determining the class of the address,
 - part identifying the local area network (LAN)
@@ -76,23 +70,23 @@ The class of address defines which bits are used for the network ID and which bi
 
 - *Class A* addresses are assigned to networks with a very large number of hosts. 
 
-	The remaining 24 bits (the last three octets) represent the host ID. This allows for 126 networks and 16,777,214 hosts per network. 
+  The remaining 24 bits (the last three octets) represent the host ID. This allows for 126 networks and 16,777,214 hosts per network.  (0.0.0.0—127.255.255.255, mask: 255.0.0.0 or /8)
 
 - *Class B* addresses are assigned to medium-sized to large-sized networks.
 
-   The two high-order bits in a class B address are always set to binary 1 0. The next 14 bits (completing the first two octets) complete the network ID. The remaining 16 bits (last two octets) represent the host ID. This allows for 16,384 networks and 65,534 hosts per network.
+   The two high-order bits in a class B address are always set to binary 1 0. The next 14 bits (completing the first two octets) complete the network ID. The remaining 16 bits (last two octets) represent the host ID. This allows for 16,384 networks and 65,534 hosts per network. (128.0.0.0—191.255.255.255, mask: 255.255.0.0 or /16)
 
 - *Class C* addresses are used for small networks. 
 
-	The three high-order bits in a class C address are always set to binary 1 1 0. The next 21 bits (completing the first three octets) complete the network ID. The remaining 8 bits (last octet) represent the host ID. This allows for 2,097,152 networks and 254 hosts per network.
+	The three high-order bits in a class C address are always set to binary 1 1 0. The next 21 bits (completing the first three octets) complete the network ID. The remaining 8 bits (last octet) represent the host ID. This allows for 2,097,152 networks and 254 hosts per network. (192.0.0.0—223.255.255.255, mask: 255.255.255.0 or /24)
 
 - *Class D* addresses are reserved for IP multicast addresses.
 
-	The four high-order bits in a class D address are always set to binary 1 1 1 0. The remaining bits are for the address that interested hosts recognize. Microsoft supports class D addresses for applications to multicast data to multicast-capable hosts on an internetwork.
+	The four high-order bits in a class D address are always set to binary 1 1 1 0. The remaining bits are for the address that interested hosts recognize. Microsoft supports class D addresses for applications to multicast data to multicast-capable hosts on an internetwork. (224.0.0.0—239.255.255.255)
 
 - *Class E* is an experimental address that is reserved for future use. 
 
-	The E class is experimental and reserved for IETF.
+	The E class is experimental and reserved for IETF. (240.0.0.0—255.255.255.255)
 
 In local area networks addresses of the class A, B or C are being used.
 
@@ -106,11 +100,11 @@ The address mask has the same length as the IP address and consists of the bit s
 
 A routing table is a set of rules, often viewed in table format, that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. All IP-enabled devices, including routers and switches, use routing tables.
 
-Routeing consists of searching in the board for appropriate information regarding the destination of the package, i.e. the route a given package is supposed to travel, in order to reach one's destination. Every entry of the route must contain two pieces of information:
+Routing consists of searching in the board for appropriate information regarding the destination of the package, i.e. the route a given package is supposed to travel, in order to reach one's destination. Every entry of the route must contain two pieces of information:
 
-destination address - it is an address of the network, with which the router is interfacing; sometimes he can happen, that the device knows a few routes of the approach to the given network 
+*destination address* — it is an address of the network, with which the router is interfacing; sometimes he can happen, that the device knows a few routes of the approach to the given network 
 
-indicator to the destination - information about whether the router is directly connected to to the destination network, or address of other router which knows, where to send the package (so-called next-hop router).
+*indicator to the destination* — information about whether the router is directly connected to to the destination network, or address of other router which knows, where to send the package (so-called next-hop router).
 
 ##### Default gateway
 
@@ -120,7 +114,7 @@ In the TCP/IP network the default gateway is the router to which computers are s
 
 ##### Lookup 
 
-Every machine that is on a TCP/IP network ( a local network, or the Internet ) has a unique Internet Protocol ( IP ) address.
+Every machine that is on a TCP/IP network ( a local network, or the Internet ) has a unique Internet Protocol (IP) address.
 
 IP-Lookup helps you to find information about your current IP address or any other IP address. It supports both IPv4 and IPv6 addresses.
 
@@ -138,6 +132,12 @@ Each IP node requires an IP address that is globally unique to the IP internetwo
 
 IP addresses are being assigned to suppliers of the Internet (Eng. Service Internet Provider - ISP), for governmental organisations, academic institutions, research organisations and other big legal bodies which are using devices directly connected to the worldwide network Internet. Network administrators subject to these individuals possess IP addresses themselves from the scope allotted to them. All remaining Internet users are using mediation of the Internet suppliers. 
 
+Certain IP addresses have been reserved for internal use. Anyone can use them without approval from any RIR, but they do not have access to the public internet. Connection to the internet can only be done via NAT or a proxy server. 
+
+- 10.0.0.0 to 10.255.255.255	— 10.0.0.0/8 (255.0.0.0)
+- 172.16.0.0 to 172.31.255.255 — 172.16.0.0/12 (255.240.0.0)
+- 192.168.0.0 to 192.168.255.255 — 192.168.0.0/16 (255.255.0.0)
+
 ##### Network address translation
 
 NAT (Network Address Translation) is a method of remapping one IP address space into another by modifying network address information in IP header of packets while they are in transit across a traffic routing device. The technique was originally used as a shortcut to avoid the need to readdress every host when a network was moved. It has become a popular and essential tool in conserving global address space in the face of IPv4 address exhaustion. One Internet-routable IP address of a NAT gateway can be used for an entire private network.
@@ -146,11 +146,11 @@ IP masquerading is a technique that hides an entire IP address space, usually co
 
 ##### RIPE
 
-RIPE Network Coordination Centre is an independent and unprofitable organization supporting the network infrastructure Internet. It's headquarter is located in Amsterdam. RIPE NCC acts,inter alia, the role of Regional Internet Register (Eng. RIR) by storing and allocating such data as IPv4 addresses and IPv6 and numbers AS.
+RIPE Network Coordination Centre is an independent and non-profit organization supporting the network infrastructure Internet. It's headquarter is located in Amsterdam. RIPE NCC acts,among others, the role of Regional Internet Register (Eng. RIR) by storing and allocating such data as IPv4 addresses and IPv6 and numbers AS.
 
 ##### ICANN
 
-ICANN a nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces of the Internet, ensuring the network's stable and secure operation. ICANN's primary principles of operation have been described as helping preserve the operational stability of the Internet; to promote competition; to achieve broad representation of the global Internet community; and to develop policies appropriate to its mission through bottom-up, consensus-based processes
+ICANN a non-profit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces of the Internet, ensuring the network's stable and secure operation. ICANN's primary principles of operation have been described as helping preserve the operational stability of the Internet; to promote competition; to achieve broad representation of the global Internet community; and to develop policies appropriate to its mission through bottom-up, consensus-based processes
 
 ##### Physical layer solutions
 
@@ -173,14 +173,21 @@ The major functions and services performed by the physical layer are:
 - Establishment and termination of circuit switched connections
 - Carrier sense and collision detection utilized by some level 2 multiple access protocols
 - Equalization filtering, training sequences, pulse shaping and other signal processing of physical signals
-- Forward error correction[5] for example bitwise convolutional coding
+- Forward error correction for example bitwise convolutional coding
 - Bit-interleaving and other channel coding
-
 
 
 ## Practical Part
 
-##### LAN
+*ping*—sends ICMP packets
+
+*traceroute*—a Linux version of tracert; analyses the route of IP packets
+
+*mtr*—a Linux alternative for pathping; both send echo request via ICMP and analyze the results, thus they combine the functionalities of ping and traceroute
+
+*whois*—queries databases that store information about registered owners of Internet resources
+
+##### Finding a computer in LAN
 
 ```bash
 🞂 sudo nmap -sn 192.168.1.4/24
@@ -222,7 +229,7 @@ RR: 	peppy.home (192.168.1.4)
 round-trip min/avg/max/stddev = 4.675/30.832/51.732/20.931 ms
 ```
 
-pathping
+mtr
 
 ```bash
 🞂 mtr 192.168.1.1 --report --report-cycles 10
@@ -231,7 +238,7 @@ HOST: peppy                       Loss%   Snt   Last   Avg  Best  Wrst StDev
   1.|-- HPCB2134.home              0.0%    10   43.0  48.1  20.0  66.1  13.3
 ```
 
-tracert
+traceroute
 
 ```bash
 🞂 traceroute 192.168.1.1 --resolve-hostnames
@@ -240,6 +247,77 @@ traceroute to 192.168.1.1 (192.168.1.1), 64 hops max
 ```
 
 whois
+
+```bash
+🞂 whois 192.168.1.1
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/public/whoisinaccuracy/index.xhtml
+#
+
+
+#
+# The following results may also be obtained via:
+# https://whois.arin.net/rest/nets;q=192.168.1.1?showDetails=true&showARIN=false&showNonArinTopLevelNet=false&ext=netref2
+#
+
+NetRange:       192.168.0.0 - 192.168.255.255
+CIDR:           192.168.0.0/16
+NetName:        PRIVATE-ADDRESS-CBLK-RFC1918-IANA-RESERVED
+NetHandle:      NET-192-168-0-0-1
+Parent:         NET192 (NET-192-0-0-0-0)
+NetType:        IANA Special Use
+OriginAS:       
+Organization:   Internet Assigned Numbers Authority (IANA)
+RegDate:        1994-03-15
+Updated:        2013-08-30
+Comment:        These addresses are in use by many millions of independently operated networks, which might be as small as a single computer connected to a home gateway, and are automatically configured in hundreds of millions of devices.  They are only intended for use within a private context  and traffic that needs to cross the Internet will need to use a different, unique address.
+Comment:        
+Comment:        These addresses can be used by anyone without any need to coordinate with IANA or an Internet registry.  The traffic from these addresses does not come from ICANN or IANA.  We are not the source of activity you may see on logs or in e-mail records.  Please refer to http://www.iana.org/abuse/answers
+Comment:        
+Comment:        These addresses were assigned by the IETF, the organization that develops Internet protocols, in the Best Current Practice document, RFC 1918 which can be found at:
+Comment:        http://datatracker.ietf.org/doc/rfc1918
+Ref:            https://whois.arin.net/rest/net/NET-192-168-0-0-1
+
+
+OrgName:        Internet Assigned Numbers Authority
+OrgId:          IANA
+Address:        12025 Waterfront Drive
+Address:        Suite 300
+City:           Los Angeles
+StateProv:      CA
+PostalCode:     90292
+Country:        US
+RegDate:        
+Updated:        2012-08-31
+Ref:            https://whois.arin.net/rest/org/IANA
+
+
+OrgTechHandle: IANA-IP-ARIN
+OrgTechName:   ICANN
+OrgTechPhone:  +1-310-301-5820 
+OrgTechEmail:  abuse@iana.org
+OrgTechRef:    https://whois.arin.net/rest/poc/IANA-IP-ARIN
+
+OrgAbuseHandle: IANA-IP-ARIN
+OrgAbuseName:   ICANN
+OrgAbusePhone:  +1-310-301-5820 
+OrgAbuseEmail:  abuse@iana.org
+OrgAbuseRef:    https://whois.arin.net/rest/poc/IANA-IP-ARIN
+
+
+#
+# ARIN WHOIS data and services are subject to the Terms of Use
+# available at: https://www.arin.net/whois_tou.html
+#
+# If you see inaccuracies in the results, please report at
+# https://www.arin.net/public/whoisinaccuracy/index.xhtml
+#
+```
+
 
 ##### studife.it.p.lodz.pl
 
@@ -257,7 +335,7 @@ PING studife.it.p.lodz.pl (212.51.220.81): 56 data bytes
 10 packets transmitted, 0 packets received, 100% packet loss
 ```
 
-pathping
+mtr
 
 ```bash
 🞂 mtr studife.it.p.lodz.pl --report --report-cycles 10
@@ -277,7 +355,7 @@ HOST: peppy                       Loss%   Snt   Last   Avg  Best  Wrst StDev
  12.|-- ???                       100.0    10    0.0   0.0   0.0   0.0   0.0
 ```
 
-tracert
+traceroute
 
 ```bash
 🞂 traceroute studife.it.p.lodz.pl --resolve-hostnames
@@ -317,9 +395,14 @@ Registrant data available at http://dns.pl/cgi-bin/en_whois.pl
 
 ping
 
+```bash
+🞂 ping gov.pl --count=5
+PING gov.pl (194.181.157.100): 56 data bytes
+--- gov.pl ping statistics ---
+5 packets transmitted, 0 packets received, 100% packet loss
+```
 
-
-pathping
+mtr
 
 ```bash
 🞂 mtr gov.pl --report --report-cycles 10
@@ -333,7 +416,7 @@ HOST: peppy                       Loss%   Snt   Last   Avg  Best  Wrst StDev
   6.|-- 194.181.157.100            0.0%    10    9.6  11.1   9.3  15.8   2.0
 ```
 
-tracert
+traceroute
 
 ```bash
 🞂 traceroute gov.pl  --resolve-hostnames
@@ -387,9 +470,14 @@ Registrant data available at http://dns.pl/cgi-bin/en_whois.pl
 
 ping
 
+```bash
+🞂 ping usa.gov --count=5
+PING usa.gov (54.85.132.205): 56 data bytes
+--- usa.gov ping statistics ---
+5 packets transmitted, 0 packets received, 100% packet loss
+```
 
-
-pathping
+mtr
 
 ```bash
 🞂 mtr usa.gov --report-wide --report-cycles 10
@@ -414,7 +502,7 @@ HOST: peppy                                     Loss%   Snt   Last   Avg  Best  
  17.|-- ???                                       100.0    10    0.0   0.0   0.0   0.0   0.0
 ```
 
-tracert
+traceroute
 
 ```bash
 🞂 traceroute usa.gov  --resolve-hostnames
@@ -455,7 +543,7 @@ server at RS.INTERNIC.NET.
 
 ##### My Computer
 
-IP Address: 	192.168.1.4
+IP Address: 		192.168.1.4
 
 MAC Address:	9C:D2:1E:18:0D:5F
 
@@ -497,7 +585,7 @@ wlp1s0    Link encap:Ethernet  HWaddr 9C:D2:1E:18:0D:5F
           RX bytes:5675491  TX bytes:868699
 ```
 
-Find your MAC address using ipconfig
+Finding MAC address of the computer using ipconfig
 
 ```bash
 🞂 ifconfig
@@ -532,7 +620,7 @@ wlp1s0    Link encap:Ethernet  HWaddr 9C:D2:1E:18:0D:5F
        valid_lft forever preferred_lft forever
 ```
 
-Find MAC address of your computer and router using arp
+Finding MAC address of router using arp
 
 ```bash
 🞂 cat /proc/net/arp 
