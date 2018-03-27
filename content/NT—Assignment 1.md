@@ -18,7 +18,23 @@ OSI (Open Systems Interconnection) is reference model for how applications can c
 
 ##### IP packet parameters
 
-IP packets consist of the header, which contains the information necessary to deliver it to the recipient, and the payload, which is the data being delivered.
+IP packets consist of the header (consisting of 32-bit words—at least 5, at most 15, so from 20B to 60B), which contains the information necessary to deliver it to the recipient, and the payload, which is the data being delivered.
+
+The header consists of:
+
+- Version
+- IP Header Length (IHL)
+- Type of Service (level of Precedence, Delay, Throughput and Reliability)
+- Total Length (incl. header)
+- Identification (for when a packet is segmenetd into fragments)
+- Flags (DF—don't fragment, MF—more fragments)
+- Fragment Offset
+- Time to Live (TTL)
+- Protocol
+- Header Checksum
+- Source Address
+- Destination Address
+- Options  (up to 40 additional bytes)
 
 ##### ICMP protocol
 
