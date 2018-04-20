@@ -20,7 +20,7 @@ OSI (Open Systems Interconnection) is reference model for how applications can c
 
 IP packets consist of the header (consisting of 32-bit words—at least 5, at most 15, so from 20B to 60B), which contains the information necessary to deliver it to the recipient, and the payload, which is the data being delivered.
 
-The header consists of:
+The header includes:
 
 - Version
 - IP Header Length (IHL)
