@@ -120,6 +120,128 @@ Connection successfully reapplied to device 'wlp1s0'.
 dig
 
 ```bash
+🞂 dig p.lodz.pl
+
+; <<>> DiG 9.11.2-P1 <<>> p.lodz.pl
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28511
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;p.lodz.pl.			IN	A
+
+;; ANSWER SECTION:
+p.lodz.pl.		300	IN	A	212.51.208.176
+
+;; Query time: 328 msec
+;; SERVER: 192.168.1.254#53(192.168.1.254)
+;; WHEN: Fri Apr 20 18:43:31 CEST 2018
+;; MSG SIZE  rcvd: 54
+
+🞂 dig ANY p.lodz.pl +noall +answer
+;; Connection to 192.168.1.254#53(192.168.1.254) for p.lodz.pl failed: connection refused.
+
+; <<>> DiG 9.11.2-P1 <<>> ANY p.lodz.pl +noall +answer
+;; global options: +cmd
+
+🞂 dig SOA p.lodz.pl +noall +answer
+
+; <<>> DiG 9.11.2-P1 <<>> SOA p.lodz.pl +noall +answer
+;; global options: +cmd
+p.lodz.pl.		300	IN	SOA	dns1.p.lodz.pl. dns1.p.lodz.pl. 2018042001 10800 1800 1209600 86400
+
+🞂 dig NS p.lodz.pl +noall +answer
+
+; <<>> DiG 9.11.2-P1 <<>> -t NS p.lodz.pl +noall +answer
+;; global options: +cmd
+p.lodz.pl.		51	IN	NS	dns1.p.lodz.pl.
+p.lodz.pl.		51	IN	NS	dns3.p.lodz.pl.
+p.lodz.pl.		51	IN	NS	dns2.p.lodz.pl.
+p.lodz.pl.		51	IN	NS	dns5.man.lodz.pl.
+
+~/Documents/network-technologies ☂ master
+🞂 dig @dns1.p.lodz.pl p.lodz.pl axfr
+
+; <<>> DiG 9.11.2-P1 <<>> @dns1.p.lodz.pl p.lodz.pl axfr
+; (1 server found)
+;; global options: +cmd
+; Transfer failed.
+
+🞂 dig dns1.p.lodz.pl dns3.p.lodz.pl dns2.p.lodz.pl  +short
+212.51.207.70
+212.51.207.69
+212.51.207.68
+```
+
+host
+
+*-l lists all hosts in a domain, using AXFR*
+
+```bash
+🞂 host -a p.lodz.pl
+Trying "p.lodz.pl"
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22575
+;; flags: qr rd ra; QUERY: 1, ANSWER: 7, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;p.lodz.pl.			IN	ANY
+
+;; ANSWER SECTION:
+p.lodz.pl.		206	IN	MX	20 gate.p.lodz.pl.
+p.lodz.pl.		37	IN	A	212.51.208.176
+p.lodz.pl.		96	IN	SOA	dns1.p.lodz.pl. dns1.p.lodz.pl. 2018042001 10800 1800 1209600 86400
+p.lodz.pl.		60	IN	NS	dns5.man.lodz.pl.
+p.lodz.pl.		60	IN	NS	dns2.p.lodz.pl.
+p.lodz.pl.		60	IN	NS	dns3.p.lodz.pl.
+p.lodz.pl.		60	IN	NS	dns1.p.lodz.pl.
+
+Received 180 bytes from 192.168.1.254#53 in 53 ms
+
+🞂 host -l p.lodz.pl
+;; Connection to 192.168.1.254#53(192.168.1.254) for p.lodz.pl failed: connection refused.
+Host p.lodz.pl not found: 4(NOTIMP)
+; Transfer failed.
+
+🞂 host gate.p.lodz.pl
+gate.p.lodz.pl has address 212.51.208.164
+```
+
+nslookup
+
+```bash
+🞂 nslookup p.lodz.pl
+Server:		192.168.1.254
+Address:	192.168.1.254#53
+
+Non-authoritative answer:
+Name:	p.lodz.pl
+Address: 212.51.208.176
+
+🞂 nslookup 212.51.208.176
+176.208.51.212.in-addr.arpa	name = webproxy0.p.lodz.pl.
+
+Authoritative answers can be found from:
+
+🞂 nslookup -type=ns  p.lodz.pll
+Server:		192.168.1.254
+Address:	192.168.1.254#53
+
+Non-authoritative answer:
+p.lodz.pl	nameserver = dns5.man.lodz.pl.
+p.lodz.pl	nameserver = dns2.p.lodz.pl.
+p.lodz.pl	nameserver = dns1.p.lodz.pl.
+p.lodz.pl	nameserver = dns3.p.lodz.pl.
+
+```
+
+##### All available information about DNS settings of a computer in Europe, outside Łódź
+
+dig
+
+```bash
 🞂 echo "TODO"
 ```
 
@@ -135,7 +257,7 @@ nslookup
 🞂 echo "TODO"
 ```
 
-##### Domain name, IP address and all available information about DNS settings of a computer in Europe, outside Łódź
+##### All available information about DNS settings of a computer outside Europe
 
 dig
 
@@ -157,8 +279,18 @@ nslookup
 
 ##### Flushing DNS memory using *ipconfig*
 
+Windows
+
 ```bash
 🞂 echo "TODO"
+```
+
+Linux
+
+```bash
+🞂 sudo systemd-resolve --flush-caches
+🞂 # Or
+🞂 sudo systemctl restart systemd-resolved
 ```
 
 ##### Changing /etc/hosts such that www.faked_address.com redirects to http://ftims.p.lodz.pl
