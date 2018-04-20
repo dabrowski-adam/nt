@@ -293,6 +293,6 @@ Linux
 🞂 sudo systemctl restart systemd-resolved
 ```
 
-##### Changing /etc/hosts such that www.faked_address.com redirects to http://ftims.p.lodz.pl
+##### Changing w such that www.faked_address.com redirects to http://ftims.p.lodz.pl
 
-—
+It instead redirects to http://pomocnik.ics.p.lodz.pl/
