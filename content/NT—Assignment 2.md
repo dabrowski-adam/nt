@@ -10,7 +10,7 @@ The hierarchy, also called the domain name space, can be imagined as an inverted
 
 A fully qualified domain name consists of a list of labels, starting from the lowest relevant label up to the highest, concatenated using the dot as a separator. 
 
-At the top is the root domain, which does not have a formal name. Its label is an empty string. Each fully qualified domain name can be regarded as ending in an empty string and thus include a terminating dot (e.g. ``` www.example.com.```), however it is most commonly implied. 
+At the top is the root domain, which does not have a formal name. Its label is an empty string. Each fully qualified domain name can be regarded as ending in an empty string and thus include a terminating dot (e.g. *www.example.com.*), however it is most commonly implied. 
 
 The root domain includes all so-called top level domains, which in turn can be divided into subdomains, and so on—however the total length of a fully qualified domain name may not exceed 253 ASCII characters. 
 
@@ -293,6 +293,6 @@ Linux
 🞂 sudo systemctl restart systemd-resolved
 ```
 
-##### Changing w such that www.faked_address.com redirects to http://ftims.p.lodz.pl
+##### Changing /etc/hosts such that www.faked_address.com redirects to http://ftims.p.lodz.pl
 
 It instead redirects to http://pomocnik.ics.p.lodz.pl/
