@@ -1,0 +1,567 @@
+
+Windows IP Configuration
+
+    www.arda.homeunix.net
+    ----------------------------------------
+    Record Name . . . . . : www.arda.homeunix.net
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 13720
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : arda.homeunix.net
+
+
+    Record Name . . . . . : arda.homeunix.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 13720
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 174.113.154.50
+
+
+    ftims.edu.p.lodz.pl
+    ----------------------------------------
+    Record Name . . . . . : ftims.edu.p.lodz.pl
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 17378
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : proxy.edu.p.lodz.pl
+
+
+    Record Name . . . . . : proxy.edu.p.lodz.pl
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 17378
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 212.191.91.21
+
+
+    www.dnssec.net
+    ----------------------------------------
+    Record Name . . . . . : www.dnssec.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.dnssec.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    www.novell.com
+    ----------------------------------------
+    Record Name . . . . . : www.novell.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 17622
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 130.57.66.5
+
+
+    www.lauraknapp.com
+    ----------------------------------------
+    Record Name . . . . . : www.lauraknapp.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 2920
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 66.175.58.9
+
+
+    www.bind9.org
+    ----------------------------------------
+    Record Name . . . . . : www.bind9.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20920
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.bind9.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20920
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    hotwired.lycos.com
+    ----------------------------------------
+    Record Name . . . . . : hotwired.lycos.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1451
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 209.202.254.10
+
+
+    array612-prod.do.dsp.mp.microsoft.com
+    ----------------------------------------
+    Record Name . . . . . : array612-prod.do.dsp.mp.microsoft.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 2831
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 40.69.223.39
+
+
+    v10.vortex-win.data.microsoft.com
+    ----------------------------------------
+    Record Name . . . . . : v10.vortex-win.data.microsoft.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 47
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : v10-win.vortex.data.microsoft.com.akadns.net
+
+
+    Record Name . . . . . : v10-win.vortex.data.microsoft.com.akadns.net
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 47
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : geo.vortex.data.microsoft.com.akadns.net
+
+
+    Record Name . . . . . : geo.vortex.data.microsoft.com.akadns.net
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 47
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : db5.vortex.data.microsoft.com.akadns.net
+
+
+    Record Name . . . . . : db5.vortex.data.microsoft.com.akadns.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 47
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 40.77.226.250
+
+
+    christian.caleca.free.fr
+    ----------------------------------------
+    Record Name . . . . . : christian.caleca.free.fr
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 2919
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : perso114-g5.free.fr
+
+
+    Record Name . . . . . : perso114-g5.free.fr
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 2919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 212.27.63.114
+
+
+    ssl.gstatic.com
+    ----------------------------------------
+    Record Name . . . . . : ssl.gstatic.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 246
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.163
+
+
+    ajax.googleapis.com
+    ----------------------------------------
+    Record Name . . . . . : ajax.googleapis.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : googleapis.l.google.com
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 216.58.209.74
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.202
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.16.10
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.16.42
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 216.58.215.74
+
+
+    Record Name . . . . . : googleapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 216.58.215.106
+
+
+    lists.isc.org
+    ----------------------------------------
+    Record Name . . . . . : lists.isc.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 4887
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 149.20.1.60
+
+
+    www.wardrive.net
+    ----------------------------------------
+    Record Name . . . . . : www.wardrive.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.wardrive.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    ife.edu.p.lodz.pl
+    ----------------------------------------
+    Record Name . . . . . : ife.edu.p.lodz.pl
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 8043
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 212.191.91.21
+
+
+    www.bind9.net
+    ----------------------------------------
+    Record Name . . . . . : www.bind9.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20917
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.bind9.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20917
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    www.networkingbooks.org
+    ----------------------------------------
+    Record Name . . . . . : www.networkingbooks.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    Record Name . . . . . : www.networkingbooks.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    www.isoc.org
+    ----------------------------------------
+    Record Name . . . . . : www.isoc.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20655
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 212.110.167.157
+
+
+    www.linuxfocus.org
+    ----------------------------------------
+    Record Name . . . . . : www.linuxfocus.org
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 7862
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : freespirit.linuxfocus.org
+
+
+    Record Name . . . . . : freespirit.linuxfocus.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 7862
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 46.19.37.193
+
+
+    fonts.googleapis.com
+    ----------------------------------------
+    Record Name . . . . . : fonts.googleapis.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : googleadapis.l.google.com
+
+
+    Record Name . . . . . : googleadapis.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 203
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.170
+
+
+    drive.google.com
+    ----------------------------------------
+    Record Name . . . . . : drive.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 276
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.174
+
+
+    www.bgp4.as
+    ----------------------------------------
+    Record Name . . . . . : www.bgp4.as
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.bgp4.as
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    www.rfc-archive.org
+    ----------------------------------------
+    Record Name . . . . . : www.rfc-archive.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 5282
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.rfc-archive.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 5282
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    www.honeypots.net
+    ----------------------------------------
+    Record Name . . . . . : www.honeypots.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 892
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : www.honeypots.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 892
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    www.forensics.nl
+    ----------------------------------------
+    Record Name . . . . . : www.forensics.nl
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    Record Name . . . . . : www.forensics.nl
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    www.securitybooks.org
+    ----------------------------------------
+    Record Name . . . . . : www.securitybooks.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    Record Name . . . . . : www.securitybooks.org
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20919
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    images.secdns.com
+    ----------------------------------------
+    Record Name . . . . . : images.secdns.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 8732
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+
+    Record Name . . . . . : images.secdns.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 8732
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    fonts.gstatic.com
+    ----------------------------------------
+    Record Name . . . . . : fonts.gstatic.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 154
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : gstaticadssl.l.google.com
+
+
+    Record Name . . . . . : gstaticadssl.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 154
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.163
+
+
+    clients4.google.com
+    ----------------------------------------
+    Record Name . . . . . : clients4.google.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 157
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : clients.l.google.com
+
+
+    Record Name . . . . . : clients.l.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 157
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.174
+
+
+    array602-prod.do.dsp.mp.microsoft.com
+    ----------------------------------------
+    Record Name . . . . . : array602-prod.do.dsp.mp.microsoft.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 98
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 52.169.83.3
+
+
+    array614-prod.do.dsp.mp.microsoft.com
+    ----------------------------------------
+    Record Name . . . . . : array614-prod.do.dsp.mp.microsoft.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 405
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 40.69.216.129
+
+
+    www.ripe.net
+    ----------------------------------------
+    Record Name . . . . . : www.ripe.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1603
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 193.0.6.139
+
+
+    docs.google.com
+    ----------------------------------------
+    Record Name . . . . . : docs.google.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 81
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.217.20.174
+
+
+    bind9.net
+    ----------------------------------------
+    Record Name . . . . . : bind9.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20920
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.78.247
+
+
+    Record Name . . . . . : bind9.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 20920
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 80.69.68.21
+
+

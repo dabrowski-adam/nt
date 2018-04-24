@@ -90,11 +90,13 @@ http://data.iana.org/TLD/tlds-alpha-by-domain.txt
 
 Control Panel
 
-—
+![](img/Właściwości.png)
+
+![](img/Protokół.png)
 
 ipconfig
 
-—
+[ipconfig /displaydns](../img/text.txt)
 
 Linux
 
@@ -242,19 +244,64 @@ p.lodz.pl	nameserver = dns3.p.lodz.pl.
 dig
 
 ```bash
-🞂 echo "TODO"
+🞂 dig www.lamoncloa.gob.es
+
+; <<>> DiG 9.11.3 <<>> www.lamoncloa.gob.es
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 30192
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.lamoncloa.gob.es.          IN      A
+
+;; ANSWER SECTION:
+www.lamoncloa.gob.es.   3599    IN      A       212.128.109.1
+
+;; Query time: 90 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Apr 23 11:36:45 îrodkowoeuropejski czas letni 2018
+;; MSG SIZE  rcvd: 65
 ```
 
 host
 
 ```bash
-🞂 echo "TODO"
+🞂 host -a www.lamoncloa.gob.es
+Trying "www.lamoncloa.gob.es"
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23652
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.lamoncloa.gob.es.          IN      ANY
+
+;; ANSWER SECTION:
+www.lamoncloa.gob.es.   3599    IN      A       212.128.109.1
+
+Received 54 bytes from 8.8.8.8#53 in 99 ms
 ```
 
 nslookup
 
 ```bash
-🞂 echo "TODO"
+🞂 nslookup www.lamoncloa.gob.es
+Server:  google-public-dns-b.google.com
+Address:  8.8.4.4
+
+Non-authoritative answer:
+Name:    www.lamoncloa.gob.es
+Address:  212.128.109.1 
+
+🞂 nslookup www.uw.edu.pl
+Server:  google-public-dns-b.google.com
+Address:  8.8.4.4
+
+Non-authoritative answer:
+Name:    uw.edu.pl
+Address:  193.0.115.152
+Aliases:  www.uw.edu.pl
 ```
 
 ##### All available information about DNS settings of a computer outside Europe
@@ -262,19 +309,57 @@ nslookup
 dig
 
 ```bash
-🞂 echo "TODO"
+🞂 dig www.japan.go.jp
+
+; <<>> DiG 9.11.3 <<>> www.japan.go.jp
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26840
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.japan.go.jp.               IN      A
+
+;; ANSWER SECTION:
+www.japan.go.jp.        29      IN      A       202.214.194.147
+
+;; Query time: 311 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: Mon Apr 23 11:40:31 îrodkowoeuropejski czas letni 2018
+;; MSG SIZE  rcvd: 60
 ```
 
 host
 
 ```bash
-🞂 echo "TODO"
+🞂 host -a www.japan.go.jp
+Trying "www.japan.go.jp"
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37662
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.japan.go.jp.               IN      ANY
+
+;; ANSWER SECTION:
+www.japan.go.jp.        29      IN      A       202.214.194.147
+www.japan.go.jp.        29      IN      AAAA    2001:240:1e00:f21::147
+
+Received 77 bytes from 8.8.8.8#53 in 341 ms
 ```
 
 nslookup
 
 ```bash
-🞂 echo "TODO"
+🞂 nslookup www.japan.go.jp
+Server:  google-public-dns-a.google.com
+Address:  8.8.8.8
+
+Non-authoritative answer:
+Name:    www.japan.go.jp.lodz.pl
+Address:  94.152.137.216
+
 ```
 
 ##### Flushing DNS memory using *ipconfig*
@@ -282,7 +367,11 @@ nslookup
 Windows
 
 ```bash
-🞂 echo "TODO"
+🞂 ipconfig /flushdns
+
+Windows IP Configuration
+
+Successfully flushed the DNS Resolver Cache.
 ```
 
 Linux
@@ -293,6 +382,29 @@ Linux
 🞂 sudo systemctl restart systemd-resolved
 ```
 
-##### Changing /etc/hosts such that www.faked_address.com redirects to http://ftims.p.lodz.pl
+##### Changing /etc/hosts such that www.faked_address.com redirects to http://ftims.p.lodz.pl 
 
-It instead redirects to http://pomocnik.ics.p.lodz.pl/
+We find IP address of *ftims.p.lodz.pl*
+
+```bash
+🞂 ping ftims.p.lodz.pl
+
+Pinging ftims.p.lodz.pl [212.51.220.250] with 32 bytes of data:
+Reply from 212.51.220.250: bytes=32 time=3ms TTL=57
+Reply from 212.51.220.250: bytes=32 time=4ms TTL=57
+Reply from 212.51.220.250: bytes=32 time=3ms TTL=57
+Reply from 212.51.220.250: bytes=32 time=4ms TTL=57
+
+Ping statistics for 212.51.220.250:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 3ms, Maximum = 4ms, Average = 3ms
+```
+
+
+
+Then we add it to etc/hosts
+
+
+
+![](img/etc_hosts.png)
