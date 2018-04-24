@@ -96,7 +96,7 @@ Control Panel
 
 ipconfig
 
-[ipconfig /displaydns](../img/text.txt)
+[ipconfig /displaydns](img/text.txt)
 
 Linux
 
